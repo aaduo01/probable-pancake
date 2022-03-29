@@ -8,11 +8,11 @@ jobs:
     runs-on: macos-11
     timeout-minutes: 30
     env:
-      SECRET_URL: "${{ uses: aaduo01/upload-release-action@2.2.1 }}"
+      SECRET_URL: "${{ https://github.com/aaduo01/upload-release-action@2.2.1 }}"
       SECRET_KEY: "${{ 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 }}"
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.2.1
       - name: Sign
         run: |
           sudo xcode-select -s /Applications/Xcode_12.5.1.app
