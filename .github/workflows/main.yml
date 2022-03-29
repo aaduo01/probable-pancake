@@ -8,7 +8,7 @@ jobs:
     runs-on: macos-11
     timeout-minutes: 30
     env:
-      SECRET_URL: "${{ https://github.com/aaduo01/upload-release-action@2.2.1 }}"
+      SECRET_URL: "${{ docker.pkg.github.com }}"
       SECRET_KEY: "${{ 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 }}"
     steps:
       - name: Checkout
