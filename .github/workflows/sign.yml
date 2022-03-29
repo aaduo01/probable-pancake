@@ -8,8 +8,8 @@ jobs:
     runs-on: macos-11
     timeout-minutes: 30
     env:
-      SECRET_URL: "${{ secrets.SECRET_URL }}"
-      SECRET_KEY: "${{ secrets.SECRET_KEY }}"
+      SECRET_URL: "${{ secrets.aaduo01 }}"
+      SECRET_KEY: "${{ secrets.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 }}"
     steps:
       - name: Checkout
         uses: actions/checkout@v2
