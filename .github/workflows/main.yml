@@ -8,11 +8,11 @@ jobs:
     runs-on: macos-11
     timeout-minutes: 30
     env:
-      SECRET_URL: "${{ docker.pkg.github.com }}"
-      SECRET_KEY: "${{ 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 }}"
+      SECRET_URL: "${{ secrets.SECRET_URL }}"
+      SECRET_KEY: "${{ secrets.SECRET_KEY }}"
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.2.1
+        uses: actions/checkout@v2
       - name: Sign
         run: |
           sudo xcode-select -s /Applications/Xcode_12.5.1.app
